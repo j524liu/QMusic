@@ -8,7 +8,9 @@ qMusicPlayer::qMusicPlayer(QWidget *parent)
 {
     ui->setupUi(this);
     player = new QMediaPlayer;
-    player->setMedia(QUrl::fromLocalFile("D:\\Music\\Cutie Panther.flac"));
+    connect(player, &QMediaPlayer::stateChanged,
+            this, &qMusicPlayer::on_player_stateChanged);
+    player->setMedia(QUrl::fromLocalFile("D:\\Musics\\Cutie Panther.flac"));
     player->setVolume(10);
     playing = false;
 }
