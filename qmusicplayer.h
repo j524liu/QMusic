@@ -2,6 +2,7 @@
 #define QMUSICPLAYER_H
 
 #include <QWidget>
+#include <QMediaPlayer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class qMusicPlayer; }
@@ -17,5 +18,6 @@ public:
 
 private:
     Ui::qMusicPlayer *ui;
+    QMediaPlayer * player;
 };
 #endif // QMUSICPLAYER_H
