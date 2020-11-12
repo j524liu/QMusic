@@ -1,7 +1,7 @@
 #include "qmusicplayer.h"
 #include "ui_qmusicplayer.h"
 #include <iostream>
-
+//player
 qMusicPlayer::qMusicPlayer(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::qMusicPlayer)
