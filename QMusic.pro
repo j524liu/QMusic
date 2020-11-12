@@ -17,10 +17,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    qmusicplayer.cpp
+    qmusicplayer.cpp \
+    savelist.cpp
 
 HEADERS += \
-    qmusicplayer.h
+    qmusicplayer.h \
+    savelist.h
 
 FORMS += \
     qmusicplayer.ui
